@@ -1,11 +1,11 @@
 public class Car {
 
     private final int seats;
-    private final Engine engine;
+    private final String engine;
     private final boolean hasGPS;
     private final boolean hasTripComputer;
 
-    private Car(int seats, Engine engine, boolean gps, boolean tripComp){
+    private Car(int seats, String engine, boolean gps, boolean tripComp){
         this.seats = seats;
         this.engine = engine;
         this.hasGPS = gps;
@@ -14,7 +14,7 @@ public class Car {
 
     static class Builder {
         private int seats;
-        private Engine engine;
+        private String engine;
         private boolean hasGPS;
         private boolean hasTripComputer;
 
@@ -24,7 +24,7 @@ public class Car {
             return this;
         }
 
-        public Builder setEngine(Engine engine) {
+        public Builder setEngine(String engine) {
             this.engine = engine;
             return this;
         }
